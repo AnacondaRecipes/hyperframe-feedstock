@@ -35,12 +35,19 @@ test:
     - pytest -vv tests
 
 about:
-  home: http://python-hyper.org/hyperframe/
+  home: https://python-hyper.org/projects/hyperframe
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Pure-Python HTTP/2 framing '
+  summary: Pure-Python HTTP/2 framing
+  description: |
+    hyperframe is a pure-Python tool for working with HTTP/2 frames.
+    This library allows you to create, serialize, and parse HTTP/2 frames.
+    hyperframe is pure-Python, contains no external dependencies, and runs
+    on a wide variety of Python interpreters and platforms.
+    Made available under the MIT license, why write your own frame parser?
   dev_url: https://github.com/python-hyper/hyperframe
+  doc_url: https://python-hyper.org/projects/hyperframe
 
 extra:
   recipe-maintainers:
