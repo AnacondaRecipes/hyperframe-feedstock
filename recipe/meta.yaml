@@ -23,8 +23,16 @@ requirements:
     - python
 
 test:
+  source_files:
+    - tests
   imports:
     - hyperframe
+  requires:
+    - pytest >=8.3.3,<9
+  commands:
+    - pip check
+    - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
+    - pytest -vv tests
 
 about:
   home: http://python-hyper.org/hyperframe/
