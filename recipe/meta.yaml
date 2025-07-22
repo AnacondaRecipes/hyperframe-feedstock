@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python
-    - setuptools
+    - setuptools >=75.6.0
   run:
     - python
 
